@@ -168,6 +168,7 @@ public class LessonTwo {
         int trueDirection = directionAndCount > 0 ? 1 : -1;
         int trueShiftCount = directionAndCount * trueDirection;
 
+        //Узнаём только значимое количество сдвигов, чтобы не крутить лишний раз по кругу
         if (trueShiftCount >= array.length) {
             trueShiftCount %= array.length;
         }
@@ -175,7 +176,7 @@ public class LessonTwo {
         if (trueShiftCount == 0) {
             printArray(array);
         } else {
-            for (int c = 0; c < trueShiftCount; ++c) {
+            for (int c = 0; c < trueShiftCount; c++) {
                 int tmp;
                 int t;
 
@@ -202,7 +203,7 @@ public class LessonTwo {
     }
 
     static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; ++i) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + ", ");
         }
 
