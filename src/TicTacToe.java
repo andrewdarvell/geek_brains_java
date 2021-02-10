@@ -121,7 +121,7 @@ public class TicTacToe {
                                     && analizeLineResult[KEY_FREE_CELL_COUNT] + analizeLineResult[KEY_PLAYER_SIGN_COUNT] >= suitableWinCount
 
                             ) {
-                                printDebug(analizeLineResult, params, l);
+//                                printDebug(analizeLineResult, params, l);
                                 aiMovePosition = findCellForAIOnLine(field, params[l][0], params[l][1], params[l][2], params[l][3]);
                                 field[aiMovePosition[0]][aiMovePosition[1]] = AI_SIGN;
                                 return;
