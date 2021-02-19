@@ -2,8 +2,9 @@ package pets;
 
 public class Cat extends Animal {
 
-    public Cat(String name) {
-        super(name, 200, 0);
+
+    public Cat(String name, int maxRunDistance) {
+        super(name, maxRunDistance, 0);
     }
 
     @Override
