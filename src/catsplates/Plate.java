@@ -21,7 +21,7 @@ public class Plate {
     }
 
     public void addFood(int n) {
-        this.food = n;
+        this.food += n;
     }
 
 }
