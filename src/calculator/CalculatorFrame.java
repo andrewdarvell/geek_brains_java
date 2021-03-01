@@ -85,10 +85,10 @@ public class CalculatorFrame extends JFrame implements ActionListener {
             arg1 = expressionParser.getNext();
         }
         while (expressionParser.hasNext()) {
-            //Первый второй аргумент (это точно опретор)
+            // Следующий аргумент (это точно оператор)
             String n = expressionParser.getNext();
             if (expressionParser.stringIsOperator(n)) {
-                //Первый третий аргумент (это точно цифра)
+                //Следующий аргумент (это точно цифра)
                 String n2 = expressionParser.getNext();
 
                 //Если оператор подходит, вычисляем выражение
